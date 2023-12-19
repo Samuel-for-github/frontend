@@ -8,7 +8,7 @@ function App() {
  const [intro, setIntro] = useState({})
 
  useEffect(()=>{
-  axios.get("/api/intro")
+  axios.get("/")
   .then((response)=>{
     setIntro(response.data)
   })
